@@ -1,3 +1,4 @@
+"use client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -91,7 +92,7 @@ export default function SignUpForm() {
           </CardContent>
           <CardFooter>
             <Button type="submit" className="h-12 w-full">
-              Fazer login
+              Entrar
             </Button>
           </CardFooter>
         </form>
