@@ -1,4 +1,5 @@
 import { headers } from "next/headers";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -24,7 +25,9 @@ export default async function AuthenticationPage() {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
       <Tabs defaultValue="login" className="w-[400px]">
-        <h1 className="m-4 text-center text-2xl font-bold">Doctor Agenda</h1>
+        <div className="mb-4 flex items-center justify-center">
+          <Image src="/logo.svg" alt="Doctor Agenda" width={250} height={28} />
+        </div>
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="login">Faça seu Login</TabsTrigger>
           <TabsTrigger value="register">Criar sua conta</TabsTrigger>
