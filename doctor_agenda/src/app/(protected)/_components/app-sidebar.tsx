@@ -69,6 +69,7 @@ export function AppSidebar() {
       },
     });
   };
+
   return (
     <Sidebar>
       <SidebarHeader className="flex items-center justify-center border-b p-4">
